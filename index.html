@@ -1174,124 +1174,6 @@
 
     <!-- 首页公告 -->
     
-<style>
-  .index-notice-content {
-    margin-top: 10px;
-  }
-  .warp {
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  .index-notice-content__ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-  }
-  .index-notice-content__ul li,
-  .index-notice-content__ul a {
-    display: block;
-    height: 30px;
-    line-height: 30px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 15px;
-  }
-  .index-notice-content__title {
-    flex: 1;
-    overflow: hidden;
-  }
-  .index-notice-content__title a,
-  .index-notice-content__title span {
-    overflow: hidden;
-    display: block;
-    text-overflow:ellipsis; 
-    white-space: nowrap;
-    height: 100%;
-    width: 100%;
-    color: #000;
-  }
-  .index-notice-content__title a:hover,
-  .index-notice-content__title span:hover {
-    text-decoration: underline;
-  }
-  .index-notice-content__date {
-    min-width: 80px;
-    margin-left: 5px;
-    color: #000;
-  }
-</style>
-<div class="index-notice" id="appIndexNotice">
-    <h3>
-      <i class="fas fa-bullhorn index-notice-icon"></i>公告
-    </h3>
-    <div class="index-notice-content">
-      
-      <vue-seamless-scroll
-        :data="listData"
-        :class-option="classOption"
-        class="warp"
-        style="height: 30px"
-      >
-        <ul class="index-notice-content__ul">
-          
-          
-            <li>
-              
-                <div class="index-notice-content__title">
-                  
-                    <span title="首次开通博客" style="">
-                      首次开通博客
-                    </span>
-                  
-                </div>
-                
-                  <div class="index-notice-content__date" style="">
-                    2023-01-21
-                  </div>
-                
-              
-            </li>
-           
-        </ul>
-      </vue-seamless-scroll>
-    </div>
-</div>
-<script src="/js/vue-seamless-scroll/index.js"></script>
-
-<!-- 滚动插件采用 vue-seamless-scroll
-  https://chenxuan0000.github.io/vue-seamless-scroll/zh/guide/06-singleStop.html 
--->
-
-<script>
-  var seamless = JSON.parse('false');
-  seamless = seamless ? 0 : 30;
-  var listData = '[object Object]' || '';
-  listData = listData.split(',');
-  var vm = new Vue({
-    el: '#appIndexNotice',
-    data: {
-      listData: listData,
-      moveNum: 2,
-      classOption: {
-        singleHeight: seamless,
-        limitMoveNum: listData.length
-      },
-    },
-    computed: {
-    },
-    mounted() {
-    },
-    methods: {
-    },
-    created() {
-      this.moveNum = parseInt(this.listData.length);
-    }
-  })
-</script>
-
-
-
     <!-- 首页文章置顶 -->
     
 
@@ -1595,7 +1477,7 @@
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Sun Jan 22 2023 14:56:54 GMT+0000 (Coordinated Universal Time)</div>
+            <div id="last-update" style="display: none;">Sun Jan 22 2023 15:18:59 GMT+0000 (Coordinated Universal Time)</div>
             <div id="last-update-show">2023-01-22 日</div>
           
         </div>
