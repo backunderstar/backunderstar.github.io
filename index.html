@@ -562,7 +562,7 @@
                   <div class="title ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.5s">青墨书晚风</div>
                   
                     <div class="ani animated default-excerpt" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.5s">
-                      <vue-typed-js :strings="defaultDesc" :loop="defaultDescTypedLoop" :type-speed="100" :back-speed="50">
+                      <vue-typed-js :strings="defaultDesc" :loop="defaultDescTypedLoop" :type-speed="300" :back-speed="100">
                         <h1 class="typing"></h1>
                       </vue-typed-js>
                     </div>
@@ -613,7 +613,7 @@
   var swiperLength = parseInt(document.querySelector(".swiper-length").innerText);
   var defaultDesc = '煮酒洗净尘嚣，论知交,花开堪折直须折，莫待无花空折枝,你好啊~,新人似旧人';
   defaultDesc = defaultDesc.split(',');
-  var defaultDescTypedLoop = JSON.parse('true');
+  var defaultDescTypedLoop = JSON.parse('false');
   var vm = new Vue({
     el: '#appSwiper',
     data: {
@@ -1595,7 +1595,7 @@
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Sun Jan 22 2023 14:45:11 GMT+0000 (Coordinated Universal Time)</div>
+            <div id="last-update" style="display: none;">Sun Jan 22 2023 14:56:54 GMT+0000 (Coordinated Universal Time)</div>
             <div id="last-update-show">2023-01-22 日</div>
           
         </div>
