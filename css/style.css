@@ -830,7 +830,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
 .header-bg-color,
 .no-img-top,
 .no-swiper {
-  background: #42b983;
+  background: rgba(66,185,133,0.8);
   transition: all 0.3s;
 }
 .header {
@@ -937,7 +937,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   color: #fff !important;
 }
 .header .header-content .navbar .menu .menu-item .sub-menu li {
-  background: #42b983;
+  background: rgba(66,185,133,0.8);
   width: 140px;
   text-align: center;
   line-height: 45px;
