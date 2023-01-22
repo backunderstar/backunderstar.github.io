@@ -179,6 +179,9 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   background-size: cover;
   transition: all 0.3s;
 }
+.reveal {
+  visibility: hidden;
+}
 #l_main {
   width: 70%;
   margin: 0 auto;
