@@ -54,6 +54,8 @@
     <!-- import link -->
     
         
+            <link href="/custom/index.css" rel="stylesheet">
+        
             
         
             
@@ -980,7 +982,7 @@
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Sun Jan 22 2023 09:21:31 GMT+0000 (Coordinated Universal Time)</div>
+            <div id="last-update" style="display: none;">Sun Jan 22 2023 13:31:44 GMT+0000 (Coordinated Universal Time)</div>
             <div id="last-update-show">2023-01-22 日</div>
           
         </div>
@@ -1122,7 +1124,7 @@
 			clearInterval(this.time);
 		},
 		mounted() {
-			let prop = '' || '';
+			let prop = '' || 'https://pica.zhimg.com/80/v2-292e6340491bd97f9d014d6be3371c04_1440w.jpg,https://pica.zhimg.com/80/v2-9659f2305acb80f25ced33aa980092c1_1440w.jpg,https://api.btstu.cn/sjbz/api.php';
 			let isImg = prop.includes('.bmp') || prop.includes('.jpg') || prop.includes('.png') || prop.includes('.tif') || prop.includes('.gif') || prop.includes('.pcx') || prop.includes('.tga') || prop.includes('.exif') || prop.includes('.fpx') || prop.includes('.psd') || prop.includes('.cdr') || prop.includes('.pcd') || prop.includes('.dxf') || prop.includes('.ufo') || prop.includes('.eps') || prop.includes('.ai') || prop.includes('.raw') || prop.includes('.WMF') || prop.includes('.webp') || prop.includes('.jpeg') || prop.includes('http://') || prop.includes('https://')
 			if (isImg) {
 				let img = prop.split(',');
