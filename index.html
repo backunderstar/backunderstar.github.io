@@ -233,7 +233,7 @@
                   
                     <i class="fas fa-home" aria-hidden="true"></i>
                   
-                  <span class="name">首页</span>
+                  <span class="name">主页</span>
                 </a>
               
             </li>
@@ -244,7 +244,7 @@
                   
                     <i class="fas fa-archive" aria-hidden="true"></i>
                   
-                  <span class="name">归档</span>
+                  <span class="name">时间轴</span>
                 </a>
               
             </li>
@@ -284,10 +284,36 @@
           
             <li class="drawer-box-content_item" style="position: relative;">
               
-                <a href="/friends" class="drawer-menu-item-link">
-                  
-                  <span class="name">友情链接</span>
+                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(5)">
+                  <span>
+                    
+                      <i class="fas fa-list"></i>
+                    
+                    <span class="name">更多</span>
+                  </span>
+                  <i class="fas fa-chevron-left arrow " :class="{'icon-rotate': isOpen(5)}" aria-hidden="true"></i>
                 </a>
+                <ul class="drawer-sub-menu" v-if="isOpen(5)">
+                  
+                  <li>
+                    <a href="/friends">
+                      
+                      <i class="fas fa-link" style="margin-top: -20px;"></i>
+                      
+                      <span>友链</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/galleryGroup">
+                      
+                      <i class="fas fa-images" style="margin-top: -20px;"></i>
+                      
+                      <span>图库</span>
+                    </a>
+                  </li>
+                  
+                </ul>
               
             </li>
           
@@ -354,22 +380,22 @@
           
             <li class="menu-item" style="position: relative;">
               
-                <a href="/" class="menu-item-link" title="首页">
+                <a href="/" class="menu-item-link" title="主页">
                   
                     <i class="fas fa-home" aria-hidden="true"></i>
                   
-                  <span class="name">首页</span>
+                  <span class="name">主页</span>
                 </a>
               
             </li>
           
             <li class="menu-item" style="position: relative;">
               
-                <a href="/archives" class="menu-item-link" title="归档">
+                <a href="/archives" class="menu-item-link" title="时间轴">
                   
                     <i class="fas fa-archive" aria-hidden="true"></i>
                   
-                  <span class="name">归档</span>
+                  <span class="name">时间轴</span>
                 </a>
               
             </li>
@@ -409,10 +435,34 @@
           
             <li class="menu-item" style="position: relative;">
               
-                <a href="/friends" class="menu-item-link" title="友情链接">
+                <a href="javascript:;" class="menu-item-link" title="更多">
                   
-                  <span class="name">友情链接</span>
+                    <i class="fas fa-list"></i>
+                  
+                  <span class="name">更多</span>
+                  <i class="fas fa-chevron-down arrow" aria-hidden="true"></i>
                 </a>
+                <ul class="sub-menu">
+                  
+                  <li>
+                    <a href="/friends">
+                      
+                      <i class="fas fa-link" style="margin-top: -20px;"></i>
+                      
+                      <span>友链</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/galleryGroup">
+                      
+                      <i class="fas fa-images" style="margin-top: -20px;"></i>
+                      
+                      <span>图库</span>
+                    </a>
+                  </li>
+                  
+                </ul>
               
             </li>
           
@@ -1468,7 +1518,7 @@
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Mon Jan 23 2023 10:10:25 GMT+0000 (Coordinated Universal Time)</div>
+            <div id="last-update" style="display: none;">Mon Jan 23 2023 13:40:06 GMT+0000 (Coordinated Universal Time)</div>
             <div id="last-update-show">2023-01-23 日</div>
           
         </div>
