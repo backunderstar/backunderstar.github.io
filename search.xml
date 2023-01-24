@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>常用shell脚本</title>
+      <link href="//common_shell/"/>
+      <url>//common_shell/</url>
+      
+        <content type="html"><![CDATA[<h3 id="常用脚本"><a href="#常用脚本" class="headerlink" title="常用脚本"></a>常用脚本</h3><h4 id="VPS工具箱"><a href="#VPS工具箱" class="headerlink" title="VPS工具箱"></a>VPS工具箱</h4><ul><li>设置交换内存，安装宝塔等集合box</li></ul><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">wget</span> <span class="token parameter variable">-O</span> box.sh https://raw.githubusercontent.com/BlueSkyXN/SKY-BOX/main/box.sh <span class="token operator">&amp;&amp;</span> <span class="token function">chmod</span> +x box.sh <span class="token operator">&amp;&amp;</span> <span class="token function">clear</span> <span class="token operator">&amp;&amp;</span> ./box.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> shell </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> shell </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo博客部署--创建hexo博客（测试页）</title>
       <link href="/2023/01/21/hexo_blog_deployment_create_the_hexo_blog_test_page/"/>
       <url>/2023/01/21/hexo_blog_deployment_create_the_hexo_blog_test_page/</url>
