@@ -66,7 +66,7 @@
       <link href="//common_shell/"/>
       <url>//common_shell/</url>
       
-        <content type="html"><![CDATA[<h3 id="常用shell脚本">常用shell脚本</h3><h4 id="VPS工具箱">VPS工具箱</h4><ul><li>设置交换内存，安装宝塔等集合box</li></ul><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wget -O box.sh https://raw.githubusercontent.com/BlueSkyXN/SKY-BOX/main/box.sh &amp;&amp; chmod +x box.sh &amp;&amp; clear &amp;&amp; ./box.sh</span><br></pre></td></tr></table></figure><p>测试</p>]]></content>
+        <content type="html"><![CDATA[<h4 id="VPS工具箱">VPS工具箱</h4><ul><li>设置交换内存，安装宝塔等集合box</li></ul><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wget -O box.sh https://raw.githubusercontent.com/BlueSkyXN/SKY-BOX/main/box.sh &amp;&amp; chmod +x box.sh &amp;&amp; clear &amp;&amp; ./box.sh</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
