@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Minecraft我的世界开服</title>
+      <link href="//mc_server/"/>
+      <url>//mc_server/</url>
+      
+        <content type="html"><![CDATA[<p>最近搭了个小服在和朋友玩，深夜兴起，开坑，但还没来得及写。待补。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Minecraft </category>
+          
+          <category> 开服 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Minecraft </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>云崽QQ机器人-Windows部署</title>
       <link href="//yunzai_win/"/>
       <url>//yunzai_win/</url>
