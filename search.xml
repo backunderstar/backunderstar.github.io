@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>为了分类的占位页</title>
+      <link href="//zhanwei/"/>
+      <url>//zhanwei/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活与无序 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Minecraft我的世界开服</title>
       <link href="//mc_server/"/>
       <url>//mc_server/</url>
@@ -13,9 +32,9 @@
       
       <categories>
           
-          <category> Minecraft </category>
+          <category> 娱乐与记录 </category>
           
-          <category> 开服 </category>
+          <category> Minecraft </category>
           
       </categories>
       
@@ -31,7 +50,7 @@
     
     
     <entry>
-      <title>云崽QQ机器人-Windows部署</title>
+      <title>云崽(Yunzai-Bot)QQ机器人-Windows部署</title>
       <link href="//yunzai_win/"/>
       <url>//yunzai_win/</url>
       
@@ -40,9 +59,9 @@
       
       <categories>
           
-          <category> QQ机器人 </category>
+          <category> 娱乐与记录 </category>
           
-          <category> 云崽 </category>
+          <category> QQ机器人 </category>
           
       </categories>
       
@@ -51,7 +70,7 @@
             
             <tag> QQ机器人 </tag>
             
-            <tag> 云崽 </tag>
+            <tag> Yunzai-Bot </tag>
             
         </tags>
       
@@ -69,16 +88,16 @@
       
       <categories>
           
-          <category> 博客 </category>
+          <category> 娱乐与记录 </category>
           
-          <category> 备忘 </category>
+          <category> Hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> hexo </tag>
+            <tag> Hexo </tag>
             
             <tag> 备忘 </tag>
             
@@ -98,7 +117,7 @@
       
       <categories>
           
-          <category> 备忘 </category>
+          <category> 学习与笔记 </category>
           
           <category> shell </category>
           
@@ -119,22 +138,24 @@
     
     <entry>
       <title>Hexo博客部署--创建hexo博客（测试页）</title>
-      <link href="/2023/01/21/hexo_blog_deployment_create_the_hexo_blog_test_page/"/>
-      <url>/2023/01/21/hexo_blog_deployment_create_the_hexo_blog_test_page/</url>
+      <link href="//hexo_test/"/>
+      <url>//hexo_test/</url>
       
         <content type="html"><![CDATA[<p>本博客页由<a href="%5BHexo%5D(https://hexo.io/zh-cn/)">Hexo</a>博客框架生成，用的是开源的<a href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a>主题，作者是<a href="https://github.com/jerryc127">jerryc127 (Jerry Wong)</a>。可选拓展丰富，方便快捷部署。</p><h2 id="创建hexo博客">创建hexo博客</h2><h3 id="安装前置">安装前置</h3><p>安装 Hexo 相当简单，只需要先安装下列应用程序即可：</p><ul><li><a href="http://nodejs.org/">Node.js</a> (Node.js 版本需不低于 10.13，建议使用较新的稳定版本)</li><li><a href="http://git-scm.com/">Git</a></li></ul><h3 id="安装Hexo">安装Hexo</h3><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><p>安装 Hexo 完成后，请执行下列命令查看版本，验证安装是否成功。</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure><p>继续执行以下命令，Hexo 将会在指定文件夹中新建所需要的文件（blog是自定义文件夹名，可以按照自己想法来取名）。</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure><p>新建完成后，指定文件夹的目录如下：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure><h4 id="config-yml">_config.yml</h4><p>网站的 <a href="https://hexo.io/zh-cn/docs/configuration">配置</a> 信息，您可以在此配置大部分的参数。</p><h3 id="本地运行">本地运行</h3><p>安装完依赖以后，执行以下命令，编译静态文件后启动hexo服务器。</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><p>在本机浏览器打开<a href="https://link.zhihu.com/?target=http%3A//localhost%3A4000/">http://localhost:4000/</a> 就可以测试访问我们的博客了。</p><h3 id="更多部署内容请访问butterfly主题官方博客，里面步骤写的非常清晰明了。">更多部署内容请访问butterfly主题官方博客，里面步骤写的非常清晰明了。</h3><p><a href="https://butterfly.js.org/posts/21cfbf15/">Butterfly 安裝文檔(一) 快速開始 | Butterfly</a></p>]]></content>
       
       
       <categories>
           
-          <category> 博客 </category>
+          <category> 娱乐与记录 </category>
+          
+          <category> Hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> hexo </tag>
+            <tag> Hexo </tag>
             
         </tags>
       
