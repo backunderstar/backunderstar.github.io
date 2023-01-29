@@ -124,3 +124,22 @@ div#category {
     width: 100%;
     margin: auto;
 }
+
+/* 首页文章卡片 */
+#recent-posts > .recent-post-item {
+    border-radius: 10px;
+} 
+/* 首页侧栏卡片 */
+#aside-content .card-widget {
+    border-radius: 10px;
+}
+/* 文章页、归档页、普通页面 */
+div#post,
+div#page,
+div#archive {
+    border-radius: 10px;
+} 
+/*下一篇圆角*/
+#pagination .next-post img, #pagination .prev-post img, #pagination.pagination-post, .postImgHover img, .relatedPosts>.relatedPosts-list>div, .relatedPosts>.relatedPosts-list>div img {
+    border-radius: 10px;
+}
