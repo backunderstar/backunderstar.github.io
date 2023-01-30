@@ -55,7 +55,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2023-01-29 17:59:46'
+  postUpdate: '2023-01-30 06:34:08'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -192,6 +192,39 @@
     return content
   }
 
+  const getComment = () => {
+    const runTwikoo = () => {
+      twikoo.getRecentComments({
+        envId: 'https://twikoo.backunderstar.com/',
+        region: 'ap-shanghai',
+        pageSize: 6,
+        includeReply: true
+      }).then(function (res) {
+        const twikooArray = res.map(e => {
+          return {
+            'content': changeContent(e.comment),
+            'avatar': e.avatar,
+            'nick': e.nick,
+            'url': e.url + '#' + e.id,
+            'date': new Date(e.created).toISOString()
+          }
+        })
+
+        saveToLocal.set('twikoo-newest-comments', JSON.stringify(twikooArray), 10/(60*24))
+        generateHtml(twikooArray)
+      }).catch(function (err) {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.innerHTML= "无法获取评论，请确认相关配置是否正确"
+      })
+    }
+
+    if (typeof twikoo === 'object') {
+      runTwikoo()
+    } else {
+      getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runTwikoo)
+    }
+  }
+
   const generateHtml = array => {
     let result = ''
 
@@ -203,7 +236,7 @@
           const name = 'src'
           result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'></a>`
         }
-
+        
         result += `<div class='content'>
         <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
         <div class='name'><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
@@ -219,36 +252,9 @@
     window.pjax && window.pjax.refresh($dom)
   }
 
-  const getComment = () => {
-    const loadWaline = () => {
-      Waline.RecentComments({
-        serverURL: 'https://waline.backunderstar.com',
-        count: 6
-      }).then(({comments}) => {
-        const walineArray = comments.map(e => {
-          return {
-            'content': changeContent(e.comment),
-            'avatar': e.avatar,
-            'nick': e.nick,
-            'url': e.url + '#' + e.objectId,
-            'date': e.insertedAt,
-          }
-        })
-        saveToLocal.set('waline-newest-comments', JSON.stringify(walineArray), 10/(60*24))
-        generateHtml(walineArray)
-      }).catch(e => {
-        const $dom = document.querySelector('#card-newest-comments .aside-list')
-        $dom.innerHTML= "无法获取评论，请确认相关配置是否正确"
-      }) 
-    }
-
-    if (typeof Waline === 'object') loadWaline()
-    else getScript('https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.min.js').then(loadWaline)
-  }
-
   const newestCommentInit = () => {
     if (document.querySelector('#card-newest-comments .aside-list')) {
-      const data = saveToLocal.get('waline-newest-comments')
+      const data = saveToLocal.get('twikoo-newest-comments')
       if (data) {
         generateHtml(JSON.parse(data))
       } else {
