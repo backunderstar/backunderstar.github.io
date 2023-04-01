@@ -1,0 +1,1 @@
+var posts=["/common_shell/","/genshin_sayings/","/hexo_create/","/mc_server/","/ubuntu_root/","/yunzai_docker/","/yunzai_win/","/zhanwei/"];function toRandomPost(){pjax.loadUrl("/"+posts[Math.floor(Math.random()*posts.length)])}
