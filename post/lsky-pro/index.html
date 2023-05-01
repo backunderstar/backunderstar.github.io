@@ -1,17 +1,19 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>『半导体物理』绪论 | yuan</title><meta name="keywords" content="学习,半导体物理,笔记,知识点总结"><meta name="author" content="yuan"><meta name="copyright" content="yuan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="『半导体物理』绪论"><meta name="application-name" content="『半导体物理』绪论"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="bookmark" href="/img/siteicon/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" sizes="180x180" href="/img/siteicon/apple-touch-icon.png"><link rel="apple-touch-icon" sizes="192x192" href="/img/siteicon/apple-touch-icon.png"><link rel="apple-touch-icon" sizes="512x512" href="/img/siteicon/apple-touch-icon.png"><link rel="apple-touch-startup-image" media="screen and (device-width:320px) and (device-height:568px) and (-webkit-device-pixel-ratio:2) and (orientation:landscape)" href="/img/siteicon/splashIcons/icon_1136x640.png"><link rel="apple-touch-startup-image" media="screen and (device-width:320px) and (device-height:568px) and (-webkit-device-pixel-ratio:2) and (orientation:portrait)" href="/img/siteicon/splashIcons/icon_640x1136.png"><link rel="apple-touch-startup-image" media="screen and (device-width:414px) and (device-height:896px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape)" href="/img/siteicon/splashIcons/icon_2688x1242.png"><link rel="apple-touch-startup-image" media="screen and (device-width:414px) and (device-height:896px) and (-webkit-device-pixel-ratio:2) and (orientation:landscape)" href="/img/siteicon/splashIcons/icon_1792x828.png"><link rel="apple-touch-startup-image" media="screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)" href="/img/siteicon/splashIcons/icon_1125x2436.png"><link rel="apple-touch-startup-image" media="screen and (device-width:414px) and (device-height:896px) and (-webkit-device-pixel-ratio:2) and (orientation:portrait)" href="/img/siteicon/splashIcons/icon_828x1792.png"><link rel="apple-touch-startup-image" media="screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape)" href="/img/siteicon/splashIcons/icon_2436x1125.png"><link rel="apple-touch-startup-image" media="screen and (device-width:414px) and (device-height:736px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)" href="/img/siteicon/splashIcons/icon_1242x2208.png"><link rel="apple-touch-startup-image" media="screen and (device-width:414px) and (device-height:736px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape)" href="/img/siteicon/splashIcons/icon_2208x1242.png"><link rel="apple-touch-startup-image" media="screen and (device-width:375px) and (device-height:667px) and (-webkit-device-pixel-ratio:2) and (orientation:landscape)" href="/img/siteicon/splashIcons/icon_1334x750.png"><link rel="apple-touch-startup-image" media="screen and (device-width:375px) and (device-height:667px) and (-webkit-device-pixel-ratio:2) and (orientation:portrait)" href="/img/siteicon/splashIcons/icon_750x1334.png"><link rel="apple-touch-startup-image" media="screen and (device-width:1024px) and (device-height:1366px) and (-webkit-device-pixel-ratio:2) and (orientation:landscape)" href="/img/siteicon/splashIcons/icon_2732x2048.png"><meta name="description" content="『半导体物理』绪论重要知识点总结。">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>『lsky-pro』开源图床 | yuan</title><meta name="keywords" content="lsky-pro,1panel,服务器面板,开源,分享,建站,博客,docker,docker-compose"><meta name="author" content="yuan"><meta name="copyright" content="yuan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="『lsky-pro』开源图床"><meta name="application-name" content="『lsky-pro』开源图床"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="bookmark" href="/img/siteicon/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" sizes="180x180" href="/img/siteicon/apple-touch-icon.png"><link rel="apple-touch-icon" sizes="192x192" href="/img/siteicon/apple-touch-icon.png"><link rel="apple-touch-icon" sizes="512x512" href="/img/siteicon/apple-touch-icon.png"><link rel="apple-touch-startup-image" media="screen and (device-width:320px) and (device-height:568px) and (-webkit-device-pixel-ratio:2) and (orientation:landscape)" href="/img/siteicon/splashIcons/icon_1136x640.png"><link rel="apple-touch-startup-image" media="screen and (device-width:320px) and (device-height:568px) and (-webkit-device-pixel-ratio:2) and (orientation:portrait)" href="/img/siteicon/splashIcons/icon_640x1136.png"><link rel="apple-touch-startup-image" media="screen and (device-width:414px) and (device-height:896px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape)" href="/img/siteicon/splashIcons/icon_2688x1242.png"><link rel="apple-touch-startup-image" media="screen and (device-width:414px) and (device-height:896px) and (-webkit-device-pixel-ratio:2) and (orientation:landscape)" href="/img/siteicon/splashIcons/icon_1792x828.png"><link rel="apple-touch-startup-image" media="screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)" href="/img/siteicon/splashIcons/icon_1125x2436.png"><link rel="apple-touch-startup-image" media="screen and (device-width:414px) and (device-height:896px) and (-webkit-device-pixel-ratio:2) and (orientation:portrait)" href="/img/siteicon/splashIcons/icon_828x1792.png"><link rel="apple-touch-startup-image" media="screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape)" href="/img/siteicon/splashIcons/icon_2436x1125.png"><link rel="apple-touch-startup-image" media="screen and (device-width:414px) and (device-height:736px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)" href="/img/siteicon/splashIcons/icon_1242x2208.png"><link rel="apple-touch-startup-image" media="screen and (device-width:414px) and (device-height:736px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape)" href="/img/siteicon/splashIcons/icon_2208x1242.png"><link rel="apple-touch-startup-image" media="screen and (device-width:375px) and (device-height:667px) and (-webkit-device-pixel-ratio:2) and (orientation:landscape)" href="/img/siteicon/splashIcons/icon_1334x750.png"><link rel="apple-touch-startup-image" media="screen and (device-width:375px) and (device-height:667px) and (-webkit-device-pixel-ratio:2) and (orientation:portrait)" href="/img/siteicon/splashIcons/icon_750x1334.png"><link rel="apple-touch-startup-image" media="screen and (device-width:1024px) and (device-height:1366px) and (-webkit-device-pixel-ratio:2) and (orientation:landscape)" href="/img/siteicon/splashIcons/icon_2732x2048.png"><meta name="description" content="一个开源的图床。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="『半导体物理』绪论">
-<meta property="og:url" content="https://www.backunderstar.com/post/semiconductor_physics_0/index.html">
+<meta property="og:title" content="『lsky-pro』开源图床">
+<meta property="og:url" content="https://www.backunderstar.com/post/lsky-pro/index.html">
 <meta property="og:site_name" content="yuan">
-<meta property="og:description" content="『半导体物理』绪论重要知识点总结。">
+<meta property="og:description" content="一个开源的图床。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.staticaly.com/gh/backunderstar/img@master/blog/76b818f01a4f2137460ff01c8825ffcd.jpg">
-<meta property="article:published_time" content="2023-04-04T01:31:39.000Z">
-<meta property="article:modified_time" content="2023-04-04T21:09:39.000Z">
+<meta property="og:image" content="https://image.muerg.cn/i/2023/05/01/644f693e0df9e.jpg">
+<meta property="article:published_time" content="2023-05-01T15:21:37.000Z">
+<meta property="article:modified_time" content="2023-05-01T07:43:15.885Z">
 <meta property="article:author" content="yuan">
-<meta property="article:tag" content="半导体物理">
+<meta property="article:tag" content="开源">
+<meta property="article:tag" content="docker">
+<meta property="article:tag" content="lsky-pro">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.staticaly.com/gh/backunderstar/img@master/blog/76b818f01a4f2137460ff01c8825ffcd.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.backunderstar.com/post/semiconductor_physics_0/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="codeva-leEf3FIIuo"/><meta name="msvalidate.01" content="6772598769C17C9198C3722965FA65C8"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://npm.elemecdn.com/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/@fancyapps/ui@4.0.31/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://image.muerg.cn/i/2023/05/01/644f693e0df9e.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.backunderstar.com/post/lsky-pro/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="codeva-leEf3FIIuo"/><meta name="msvalidate.01" content="6772598769C17C9198C3722965FA65C8"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://npm.elemecdn.com/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/@fancyapps/ui@4.0.31/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   navMusic: true,
   algolia: {"appId":"OIAMXEJ4JR","apiKey":"670886cabd9e8a5dfb7b3757320df0b0","indexName":"hexo","hits":{"per_page":6},"languages":{"input_placeholder":"键入后按下回车搜索！","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
@@ -49,12 +51,12 @@
   islazyload: true,
   isAnchor: false
 }</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: '『半导体物理』绪论',
+  title: '『lsky-pro』开源图床',
   isPost: true,
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2023-04-04 21:09:39'
+  postUpdate: '2023-05-01 07:43:15'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -177,190 +179,183 @@
       }
     }
     detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog_name"><div class="back-home-button" tabindex="-1"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">博客站点</div><div class="back-menu-list"><a class="back-menu-item" href="https://www.backunderstar.com" title="主站" target="_blank"><img class="back-menu-item-icon" src="https://cdn.staticaly.com/gh/backunderstar/img@master/blog/d6d29eac8ff30ff4b9d7992dc8ad1ab2.jpg"/><span class="back-menu-item-text">主站</span></a><a class="back-menu-item" href="https://new.backunderstar.com" title="备用站" target="_blank"><img class="back-menu-item-icon" src="https://cdn.staticaly.com/gh/backunderstar/img@master/blog/d6d29eac8ff30ff4b9d7992dc8ad1ab2.jpg"/><span class="back-menu-item-text">备用站</span></a><a class="back-menu-item" href="https://backunderstar.github.io" title="Github线路" target="_blank"><img class="back-menu-item-icon" src="https://cdn.staticaly.com/gh/backunderstar/img@master/blog/d6d29eac8ff30ff4b9d7992dc8ad1ab2.jpg"/><span class="back-menu-item-text">Github线路</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">工具网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://chat.backunderstar.com" title="Chat" target="_blank"><img class="back-menu-item-icon" src="https://cdn.staticaly.com/gh/backunderstar/img@master/blog/d52a7c4a482f1f35612241396c01d8d8.png"/><span class="back-menu-item-text">Chat</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">社区主页</div><div class="back-menu-list"><a class="back-menu-item" href="https://space.bilibili.com/1922524237" title="Bilibili" target="_blank"><img class="back-menu-item-icon" src="https://cdn.staticaly.com/gh/backunderstar/img@master/blog/d6d29eac8ff30ff4b9d7992dc8ad1ab2.jpg"/><span class="back-menu-item-text">Bilibili</span></a></div></div></div></div><a id="site-name" href="/"><div class="title">yuan</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><center id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></center></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><i class="anzhiyufont anzhiyu-icon-artstation faa-tada" style="font-size: 0.9em;"></i><span> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child" style="left:-31px;"><li><a class="site-page child faa-parent animated-hover" href="/music/?id=8459850423&amp;server=tencent"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索🔍"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span> 搜索</span></a></div><div class="nav-button" id="darkmode_navswitch"><a class="darkmode_switchbutton" type="button" href="javascript:void(0);" title="浅色和深色模式转换" onclick="rm.switchDarkMode()"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke" style="font-size: 1.3rem"></i></a></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">『半导体物理』绪论</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-04-04T01:31:39.000Z" title="发表于 2023-04-04 01:31:39">2023-04-04</time><span class="post-meta-separator">|</span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-04T21:09:39.000Z" title="更新于 2023-04-04 21:09:39">2023-04-04</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0%E4%B8%8E%E7%AC%94%E8%AE%B0/">学习与笔记</a><i class="anzhiyufont anzhiyu-icon-angle-right post-meta-separator"></i><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0%E4%B8%8E%E7%AC%94%E8%AE%B0/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/">半导体物理</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="anzhiyufont anzhiyu-icon-file-word post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2k</span><span class="post-meta-separator">|</span><i class="anzhiyufont anzhiyu-icon-clock post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>6分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="『半导体物理』绪论"><i class="anzhiyufont anzhiyu-icon-fw-eye post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="https://cdn.staticaly.com/gh/backunderstar/img@master/blog/76b818f01a4f2137460ff01c8825ffcd.jpg"></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><hr>
-<p>写在前面：</p>
-<p>​		绪论内容好像不是很重要，只是对这门课程基础的基础有个了解，宏观上有个把握感觉就差不多。</p>
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog_name"><div class="back-home-button" tabindex="-1"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">博客站点</div><div class="back-menu-list"><a class="back-menu-item" href="https://www.backunderstar.com" title="主站" target="_blank"><img class="back-menu-item-icon" src="https://cdn.staticaly.com/gh/backunderstar/img@master/blog/d6d29eac8ff30ff4b9d7992dc8ad1ab2.jpg"/><span class="back-menu-item-text">主站</span></a><a class="back-menu-item" href="https://new.backunderstar.com" title="备用站" target="_blank"><img class="back-menu-item-icon" src="https://cdn.staticaly.com/gh/backunderstar/img@master/blog/d6d29eac8ff30ff4b9d7992dc8ad1ab2.jpg"/><span class="back-menu-item-text">备用站</span></a><a class="back-menu-item" href="https://backunderstar.github.io" title="Github线路" target="_blank"><img class="back-menu-item-icon" src="https://cdn.staticaly.com/gh/backunderstar/img@master/blog/d6d29eac8ff30ff4b9d7992dc8ad1ab2.jpg"/><span class="back-menu-item-text">Github线路</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">工具网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://chat.backunderstar.com" title="Chat" target="_blank"><img class="back-menu-item-icon" src="https://cdn.staticaly.com/gh/backunderstar/img@master/blog/d52a7c4a482f1f35612241396c01d8d8.png"/><span class="back-menu-item-text">Chat</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">社区主页</div><div class="back-menu-list"><a class="back-menu-item" href="https://space.bilibili.com/1922524237" title="Bilibili" target="_blank"><img class="back-menu-item-icon" src="https://cdn.staticaly.com/gh/backunderstar/img@master/blog/d6d29eac8ff30ff4b9d7992dc8ad1ab2.jpg"/><span class="back-menu-item-text">Bilibili</span></a></div></div></div></div><a id="site-name" href="/"><div class="title">yuan</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><center id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></center></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><i class="anzhiyufont anzhiyu-icon-artstation faa-tada" style="font-size: 0.9em;"></i><span> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child" style="left:-31px;"><li><a class="site-page child faa-parent animated-hover" href="/music/?id=8459850423&amp;server=tencent"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索🔍"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span> 搜索</span></a></div><div class="nav-button" id="darkmode_navswitch"><a class="darkmode_switchbutton" type="button" href="javascript:void(0);" title="浅色和深色模式转换" onclick="rm.switchDarkMode()"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke" style="font-size: 1.3rem"></i></a></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">『lsky-pro』开源图床</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-05-01T15:21:37.000Z" title="发表于 2023-05-01 15:21:37">2023-05-01</time><span class="post-meta-separator">|</span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-05-01T07:43:15.885Z" title="更新于 2023-05-01 07:43:15">2023-05-01</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%88%86%E4%BA%AB%E4%B8%8E%E8%AE%B0%E5%BD%95/">分享与记录</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="anzhiyufont anzhiyu-icon-file-word post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.2k</span><span class="post-meta-separator">|</span><i class="anzhiyufont anzhiyu-icon-clock post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="『lsky-pro』开源图床"><i class="anzhiyufont anzhiyu-icon-fw-eye post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="https://image.muerg.cn/i/2023/05/01/644f693e0df9e.jpg"></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><hr>
+<p>​		因为免费图床picgo+github、vika等有风险或者拒绝外链、速率慢等问题，打算将图床转移到服务器上，这里选择了兰空图床，个人用足够。</p>
+<p>​		2023年4月30日17:26:10 初次记录</p>
 <hr>
-<h1 id="课程内容"><a href="#课程内容" class="headerlink" title="课程内容"></a>课程内容</h1><h2 id="理论"><a href="#理论" class="headerlink" title="理论"></a>理论</h2><ul>
-<li>半导体的晶体结构和电子状态</li>
-<li>杂质和缺陷能级</li>
-<li>载流子的统计分布</li>
-<li>载流子的散射及电导问题</li>
-<li>非平衡载流子的产生、复合及运动规律</li>
+<h1 id="事先准备"><a href="#事先准备" class="headerlink" title="事先准备"></a>事先准备</h1><ul>
+<li>云服务器</li>
+<li>安装好1panel面板</li>
 </ul>
-<h2 id="应用、器件结构"><a href="#应用、器件结构" class="headerlink" title="应用、器件结构"></a>应用、器件结构</h2><ul>
-<li>半导体的表面和界面 （pn结、金属与半导体接触、半导体表面与 MIS结构、半导体异质结构）</li>
-<li>半导体的光、热、磁、压阻等物理现象</li>
-<li>非晶半导体</li>
-</ul>
-<h1 id="什么是半导体"><a href="#什么是半导体" class="headerlink" title="什么是半导体"></a>什么是半导体</h1><h2 id="导电性"><a href="#导电性" class="headerlink" title="导电性"></a>导电性</h2><ul>
-<li>电阻率ρ介于导体和绝缘体之间，并且具有负的电阻温度系数→半导体<ul>
-<li>导体：</li>
-<li>半导体：</li>
-<li>绝缘体：</li>
-</ul>
-</li>
-</ul>
-<h2 id="电阻温度系数"><a href="#电阻温度系数" class="headerlink" title="电阻温度系数"></a>电阻温度系数</h2><ul>
-<li>半导体电阻值是负的温度系数</li>
-</ul>
-<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.muerg.cn/i/2023/05/01/644f644bb04c3.jpg" style="zoom:80%;" />
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.muerg.cn/i/2023/05/01/644f5edeef1d8.jpg" style="zoom:80%;" />
 
-<h2 id="电子激发能隙"><a href="#电子激发能隙" class="headerlink" title="电子激发能隙"></a>电子激发能隙</h2><ul>
-<li>导  体： Eg ~ 0          例如： Eg (Cu) ~ 0 eV  </li>
-<li>绝缘体： Eg &gt; 3 eV       例如： Eg (SiO2 )&#x3D;8.0 eV </li>
-<li>半导体： 0 &lt; Eg &lt; 3 eV   例如： Eg (Si) &#x3D;1.12 eV </li>
-<li>例外： <ul>
-<li>半导体金刚石 ( Eg ~ 6 eV ) </li>
-<li>氮化镓 GaN  ( Eg ~ 3.5 eV ) </li>
-<li>硫化锌 ZnS  ( Eg ~ 3.5 eV )</li>
+<h1 id="开始部署"><a href="#开始部署" class="headerlink" title="开始部署"></a>开始部署</h1><h2 id="安装MySQL"><a href="#安装MySQL" class="headerlink" title="安装MySQL"></a>安装MySQL</h2><ul>
+<li>进入1panel面板，在应用商店里安装MySQL</li>
 </ul>
-</li>
-</ul>
-<h1 id="半导体材料的分类"><a href="#半导体材料的分类" class="headerlink" title="半导体材料的分类"></a>半导体材料的分类</h1><table>
-<thead>
-<tr>
-<th>功能和应用</th>
-<th>组成</th>
-<th>结构</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>微电子半导体、光电半导体、<br />热电半导体、微波半导体、<br />气敏半导体</td>
-<td><strong>无机半导体</strong>：元素、<br />化合物 Si、Ge、GaN、InP……<br /><strong>有机半导体</strong></td>
-<td><strong>晶体</strong>：单晶体、多晶体<br /><strong>非晶</strong>：无定形，短程有序、长程无序结构</td>
-</tr>
-</tbody></table>
-<h2 id="无机半导体晶体材料"><a href="#无机半导体晶体材料" class="headerlink" title="无机半导体晶体材料"></a>无机半导体晶体材料</h2><ul>
-<li><strong>元素半导体</strong></li>
-<li><strong>化合物半导体</strong></li>
-<li><strong>固溶体半导体</strong>：具有半导体性质的固溶体，又称混晶或混合晶体</li>
-</ul>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.muerg.cn/i/2023/05/01/644f64706f571.png"></p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.muerg.cn/i/2023/05/01/644f6a579c17c.jpg" style="zoom:80%;" />
+
 <ul>
-<li>下面是一些具体的例子：</li>
-<li>过渡金属氧化物半导体：有ZnO、SnO2、V2O5、Cr2O3、Mn2O3、 FeO、CoO、NiO等。 </li>
-<li>尖晶石型化合物（磁性半导体）：主要有CdCr2S4、CdCr2Se4、 HgCr2S4等。 </li>
-<li>稀土氧、硫、硒、碲化合物：有EuO、EuS、EuSe、EuTe 等。</li>
+<li>等待安装完成（时间较久，网慢接近10分钟，网好两分钟）</li>
+<li>之后在数据库栏<strong>创建数据库</strong>——lsky（自定义），并记住数据库的名称、用户名和密码，访问权限必须为所有人，确认。</li>
 </ul>
-<h2 id="非晶态半导体"><a href="#非晶态半导体" class="headerlink" title="非晶态半导体"></a>非晶态半导体</h2><ul>
-<li><strong>都是非结晶体，它们缺乏构成原子 周期性的长程序</strong></li>
-</ul>
-<ol>
-<li>非晶Si、非晶Ge以及非晶Te、Se元素半导体</li>
-<li>化合物有GeTe、As2 Te3、Se4 Te、Se2 As3、As2 SeTe非晶半导体</li>
-<li>非晶态与晶态半导体具有类似的基本能带结构，也有导带、 价带和禁带</li>
-</ol>
-<h2 id="有机半导体"><a href="#有机半导体" class="headerlink" title="有机半导体"></a>有机半导体</h2><ul>
-<li><strong>具有半导体性质的有机材料</strong></li>
-</ul>
-<ol>
-<li>有机半导体可分为<font color=Blue>有机物、聚合物、给体-受体络合物</font>三 类。 <ol>
-<li>有机物类包括芳烃、染料、金属有机化合物，如紫精、酞 菁、孔雀石绿、若丹明B等。 </li>
-<li>聚合物类包括主链为饱和类聚合物和共轭型聚合物，如聚 苯、聚乙炔、聚乙烯咔唑、聚苯硫醚等。 </li>
-<li>电荷转移络合物由电子给予体与电子接受体二部分组成， 典型的有四甲基对苯二胺与四氰基醌二甲烷复合物。</li>
-</ol>
-</li>
-</ol>
-<h1 id="几种主要半导体发展现状与趋势"><a href="#几种主要半导体发展现状与趋势" class="headerlink" title="几种主要半导体发展现状与趋势"></a>几种主要半导体发展现状与趋势</h1><h2 id="硅"><a href="#硅" class="headerlink" title="硅"></a>硅</h2><ul>
-<li>直拉法（ CZ 法）</li>
-<li>区熔法（ FZ 法）</li>
-<li>外延法 </li>
-<li>增大直拉硅（CZ-Si）单晶的直径仍是今后CZ-Si发展的总趋势</li>
-</ul>
-<h2 id="GaAs和InP单晶"><a href="#GaAs和InP单晶" class="headerlink" title="GaAs和InP单晶"></a>GaAs和InP单晶</h2><p>以低位错密度生长的2～3英寸的导电GaAs衬底材 料为主。</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.muerg.cn/i/2023/05/01/644f6a6240765.jpg" style="zoom:80%;" />
+
 <ul>
-<li><p>InP比GaAs </p>
+<li>查看<strong>连接信息</strong>，记住服务名称</li>
+</ul>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.muerg.cn/i/2023/05/01/644f6a67e0d70.jpg" style="zoom:80%;" />
+
 <ul>
-<li>具有更优越的高频性能</li>
-<li>发展的速度更快</li>
+<li>即<ul>
+<li>数据库名称</li>
+<li>数据库用户名</li>
+<li>数据库密码</li>
+<li>服务名称</li>
 </ul>
 </li>
-<li><p>但是</p>
+</ul>
+<h2 id="创建编排模板"><a href="#创建编排模板" class="headerlink" title="创建编排模板"></a>创建编排模板</h2><ul>
+<li>在容器-编排模版-创建编排模板，确认保存</li>
+</ul>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.muerg.cn/i/2023/05/01/644f6a741268e.jpg" style="zoom:80%;" />
+
 <ul>
-<li>研制直径3英寸以上大直径的InP 单晶的关键技术 尚未完全突破，价格居高不下。</li>
+<li>模板内容为</li>
 </ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">&#x27;3&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="attr">networks:</span>	<span class="comment">#表示MySQL所在的桥接网络</span></span><br><span class="line">  <span class="attr">1panel-network:</span></span><br><span class="line">    <span class="attr">external:</span> <span class="literal">true</span></span><br><span class="line">    </span><br><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">lskypro:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">halcyonazure/lsky-pro-docker:latest</span> <span class="comment">#指定容器镜像</span></span><br><span class="line">    <span class="attr">restart:</span> <span class="string">unless-stopped</span></span><br><span class="line">    <span class="attr">hostname:</span> <span class="string">lskypro</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">lskypro</span> <span class="comment">#容器名，可自定义</span></span><br><span class="line">    <span class="attr">environment:</span>	</span><br><span class="line">      <span class="bullet">-</span> <span class="string">WEB_PORT=8089</span></span><br><span class="line">    <span class="attr">volumes:</span>	<span class="comment">#数据文件挂载——宿主机目录:容器内目录</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">/root/data/lsky/web:/var/www/html/</span></span><br><span class="line">    <span class="attr">ports:</span>		<span class="comment">#端口映射——宿主机端口:容器端口</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;8089:8089&quot;</span></span><br><span class="line">    <span class="attr">networks:</span>	<span class="comment">#加入MySQL所在的桥接网络</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">1panel-network</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="拉取镜像"><a href="#拉取镜像" class="headerlink" title="拉取镜像"></a>拉取镜像</h2><ul>
+<li><p>拉取镜像这一步也可以忽略，在<strong>编排</strong>时如果没拉取也会自动拉取，但是有时候看不到日志，并且很慢。</p>
+</li>
+<li><p>拉取兰空图床的docker镜像：镜像-拉取镜像-仓库名-镜像名-拉取</p>
 </li>
 </ul>
-<h2 id="半导体超晶格、量子阱"><a href="#半导体超晶格、量子阱" class="headerlink" title="半导体超晶格、量子阱"></a>半导体超晶格、量子阱</h2><p>半导体超晶格是指由一组多层薄膜周期重复排列而成的单晶。 </p>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">halcyonazure/lsky-pro-docker:latest</span><br></pre></td></tr></table></figure>
+
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.muerg.cn/i/2023/05/01/644f6a7c4f0a2.jpg" style="zoom:80%;" />
+
 <ul>
-<li>III-V族超晶格、量子阱材料 GaAlAs&#x2F;GaAs，GaInAs&#x2F;GaAs， AlGaInP&#x2F;GaAs； GaInAs&#x2F;InP， AlInAs&#x2F;InP， InGaAsP&#x2F;InP等</li>
-<li>GaAs、InP基晶格匹配和应变 补偿材料体系已发展得相当成熟。</li>
-<li><strong>已成功地用来制造超高速、 超高频微电子器件和单片集成电路。</strong></li>
+<li>等待<code>image pull successful!</code>，返回</li>
 </ul>
-<h2 id="硅基应变异质结构材料"><a href="#硅基应变异质结构材料" class="headerlink" title="硅基应变异质结构材料"></a>硅基应变异质结构材料</h2><ul>
-<li><p>目前硅基材料研究的主流：GeSi&#x2F;Si应变层超晶格材料 → 新一代移动通信。</p>
-</li>
-<li><p>Si&#x2F;GeSi MOSFET 的最高截止频率已达200GHz，噪音在 10GHz下为0.9dB，其性能可与GaAs器件相媲美。</p>
-</li>
+<h2 id="编排"><a href="#编排" class="headerlink" title="编排"></a>编排</h2><ul>
+<li>编排-创建编排-编排模板-文件夹名-选择刚才创建的模板-验证通过-确认</li>
 </ul>
-<h2 id="一维量子线、零维量子点"><a href="#一维量子线、零维量子点" class="headerlink" title="一维量子线、零维量子点"></a>一维量子线、零维量子点</h2><ol>
-<li>基于<ol>
-<li>量子尺寸效应</li>
-<li>量子干涉效应</li>
-<li>量子隧穿效应</li>
-<li>非线性光学效应</li>
-</ol>
-</li>
-<li>应用<ol>
-<li>低维新型半导体材料</li>
-<li>人工构造（通过能带工程实施）</li>
-<li>新一代量子器件的基础</li>
-</ol>
-</li>
-</ol>
-<h2 id="宽带隙半导体材料"><a href="#宽带隙半导体材料" class="headerlink" title="宽带隙半导体材料"></a>宽带隙半导体材料</h2><p>金刚石 碳化硅 III族氮化物、立方氮化硼 II-VI族硫、锡、碲化物、氧化物及固溶体等</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.muerg.cn/i/2023/05/01/644f6a81a36a7.jpg" style="zoom:80%;" />
+
 <ul>
-<li>高频大功率、耐高温、抗辐射半导体微电子 器件和电路的理想材料</li>
-<li>通信、汽车、航空、航天、石油开采及国防</li>
+<li>等待<code>docker-compose up successful!</code>，返回</li>
 </ul>
-<h1 id="半导体材料的地位"><a href="#半导体材料的地位" class="headerlink" title="半导体材料的地位"></a>半导体材料的地位</h1><ul>
-<li>半导体微电子和光电子材料是很多科学技术的基础</li>
-<li>比如通信、高速计算、 大容量信息处理、 空间防御、电子对 抗、武器装备的微 型化、智能化</li>
-<li>而这些科学技术都与国民经济与国家安全息息相关</li>
-</ul>
-<p><strong>半导体微电子和光电子材料</strong>	—&gt;	<strong>科学技术</strong>	—&gt;	<strong>国民经济、国家安全</strong></p>
-<h1 id="半导体的发展"><a href="#半导体的发展" class="headerlink" title="半导体的发展"></a>半导体的发展</h1><h2 id="第一代半导体材料"><a href="#第一代半导体材料" class="headerlink" title="第一代半导体材料"></a>第一代半导体材料</h2><ul>
-<li><strong>主要是指硅（Si）、锗元素（Ge）半导体材料</strong></li>
-</ul>
-<p>​		作为第一代半导体材料的锗和硅，在国际信息产业技术 中的各类分立器件和应用极为普遍的集成电路、电子信 息网络工程、电脑、手机、电视、航空航天、各类军事 工程和迅速发展的新能源、硅光伏产业中都得到了极为 广泛的应用，硅芯片在人类社会的每一个角落无不闪烁 着它的光辉。</p>
-<h2 id="第二代半导体材料"><a href="#第二代半导体材料" class="headerlink" title="第二代半导体材料"></a>第二代半导体材料</h2><ul>
-<li><strong>主要是指化合物半导体材料</strong></li>
-</ul>
-<p>​		如<strong>砷化镓</strong>（GaAs）、<strong>锑化铟</strong>（InSb）；三元化合物半导 体，如GaAsAl、GaAsP；还有一些固溶体半导体，如GeSi、GaAs-GaP；玻璃半导体（又称非晶态半导体），如 非晶硅、玻璃态氧化物半导体；有机半导体，如酞菁、 酞菁铜、聚丙烯腈等。</p>
-<h2 id="第三代半导体材料"><a href="#第三代半导体材料" class="headerlink" title="第三代半导体材料"></a>第三代半导体材料</h2><ul>
-<li>主要以<strong>碳化硅</strong>（SiC）、<strong>氮化镓</strong>（GaN）、氧化锌 （ZnO）、金刚石、氮化铝（AlN）为代表的<strong>宽禁带半导体材料</strong>。</li>
-</ul>
-<p>​		在应用方面，根据第三代半导体的发展情况，其主要应 用为半导体照明、电力电子器件、激光器和探测器、以 及其他领域，每个领域产业成熟度各不相同。在前沿研 究领域，宽禁带半导体还处于实验室研发阶段。</p>
-<h2 id="第三代半导体特征及应用"><a href="#第三代半导体特征及应用" class="headerlink" title="第三代半导体特征及应用"></a>第三代半导体特征及应用</h2><ul>
-<li>第一代 硅（Si）等奠定微电子产业基础</li>
-<li>第二代 砷化镓（GaAS）等奠定信息产业基础</li>
-<li>第三代半导体支撑<strong>绿色、低碳、智能社会</strong>的可持续发展</li>
-</ul>
-<h3 id="五高特性"><a href="#五高特性" class="headerlink" title="五高特性"></a>五高特性</h3><p>第三代半导体材料（氮化镓、碳化硅、金刚石等）具有五高特性</p>
-<ol>
-<li>高光效</li>
-<li>高功率</li>
-<li>高电压</li>
-<li>高频率</li>
-<li>高工作温度</li>
-</ol>
-<h3 id="氮化镓的唯一性"><a href="#氮化镓的唯一性" class="headerlink" title="氮化镓的唯一性"></a>氮化镓的唯一性</h3><ul>
-<li><p>目前已知的可达到万伏千安等级（全球能源互联网必须的超特高压柔性直流输电）的唯一功率半导体材料</p>
+<h2 id="确认成功"><a href="#确认成功" class="headerlink" title="确认成功"></a>确认成功</h2><ul>
+<li><p>到<a href="http://ip:8089去确认是否成功（可以选择用1panel防火墙管理端口放通），有显示就算赢！">http://ip:8089去确认是否成功（可以选择用1panel防火墙管理端口放通），有显示就算赢！</a></p>
 </li>
-<li><p>目前能实现高频、高效、大功率（5G通信要求频率覆盖到40GHz以上，输出功率几瓦到几百瓦）的唯一材料</p>
-</li>
-<li><p>以氮化镓为代表的氮化物是唯一覆盖可见光到紫外波长范围的半导体发光材料体系</p>
+<li><p>部署成功，先不急初始化，先配域名</p>
 </li>
 </ul>
-<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><ol>
-<li>课程范围与内容</li>
-<li>半导体的定义与分类</li>
-<li>几种主要半导体发展现状与趋势</li>
-<li>半导体的发展历史</li>
-<li>第三代半导体材料的特点及应用</li>
-</ol>
-</article><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="/img/wechat.png" target="_blank"><img class="post-qr-code-img" src="/img/wechat.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.png" target="_blank"><img class="post-qr-code-img" src="/img/alipay.png" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul><a class="reward-main-btn" href="/about/" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="https://www.backunderstar.com/post/semiconductor_physics_0/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=『半导体物理』绪论&amp;url=https://www.backunderstar.com/post/semiconductor_physics_0/&amp;pic=https://cdn.staticaly.com/gh/backunderstar/img@master/blog/76b818f01a4f2137460ff01c8825ffcd.jpg" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="rm.copyPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>半导体物理<span class="tagsPageCount">1</span></a></div></div></div></div></div><div class="post-copyright"><i class="anzhiyufont anzhiyu-icon-copyright"></i><div class="post-copyright__author"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="https://www.backunderstar.com/post/semiconductor_physics_0/">原创</a><a class="post-copyright-title"><span>『半导体物理』绪论</span></a></div><div class="post-copyright-info-box"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"></span><a class="link" href="https://www.backunderstar.com">yuan</a></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a class="link" href="https://www.backunderstar.com/post/semiconductor_physics_0/">https://www.backunderstar.com/post/semiconductor_physics_0/</a></span><span class="copy-button" onclick="rm.copyPageUrl()"><i class="anzhiyufont anzhiyu-icon-copy"></i></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://www.backunderstar.com" target="_blank">yuan</a>！</span></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/post/ubuntu_root/"><img class="prev-cover" src="https://cdn.staticaly.com/gh/backunderstar/img@master/blog/691246edf5f4ad14bc00e34e8bc5bf18.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">ubuntu默认root登录</div></div></a></div><div class="next-post pull-right"><a href="/post/electric_system_0/"><img class="next-cover" src="https://image.muerg.cn/i/2023/05/01/644f1e1f85986.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">『电力系统分析』绪论</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="anzhiyufont anzhiyu-icon-comments"></i><span> 评论</span></div><div class="comment-randomInfo" style="display: none"><a onclick="anzhiyu.addRandomCommentInfo()" href="javascript:void(0)">匿名评论</a></div><div class="comment-tips" id="comment-tips"><span>你无需删除空行，直接评论以获取最佳展示效果</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div><div class="comment-barrage"></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AF%BE%E7%A8%8B%E5%86%85%E5%AE%B9"><span class="toc-number">1.</span> <span class="toc-text">课程内容</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%90%86%E8%AE%BA"><span class="toc-number">1.1.</span> <span class="toc-text">理论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BA%94%E7%94%A8%E3%80%81%E5%99%A8%E4%BB%B6%E7%BB%93%E6%9E%84"><span class="toc-number">1.2.</span> <span class="toc-text">应用、器件结构</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%8A%E5%AF%BC%E4%BD%93"><span class="toc-number">2.</span> <span class="toc-text">什么是半导体</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%BC%E7%94%B5%E6%80%A7"><span class="toc-number">2.1.</span> <span class="toc-text">导电性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%B5%E9%98%BB%E6%B8%A9%E5%BA%A6%E7%B3%BB%E6%95%B0"><span class="toc-number">2.2.</span> <span class="toc-text">电阻温度系数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%B5%E5%AD%90%E6%BF%80%E5%8F%91%E8%83%BD%E9%9A%99"><span class="toc-number">2.3.</span> <span class="toc-text">电子激发能隙</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%9D%90%E6%96%99%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-number">3.</span> <span class="toc-text">半导体材料的分类</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A0%E6%9C%BA%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%99%B6%E4%BD%93%E6%9D%90%E6%96%99"><span class="toc-number">3.1.</span> <span class="toc-text">无机半导体晶体材料</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%9E%E6%99%B6%E6%80%81%E5%8D%8A%E5%AF%BC%E4%BD%93"><span class="toc-number">3.2.</span> <span class="toc-text">非晶态半导体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%89%E6%9C%BA%E5%8D%8A%E5%AF%BC%E4%BD%93"><span class="toc-number">3.3.</span> <span class="toc-text">有机半导体</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%A0%E7%A7%8D%E4%B8%BB%E8%A6%81%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%8F%91%E5%B1%95%E7%8E%B0%E7%8A%B6%E4%B8%8E%E8%B6%8B%E5%8A%BF"><span class="toc-number">4.</span> <span class="toc-text">几种主要半导体发展现状与趋势</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A1%85"><span class="toc-number">4.1.</span> <span class="toc-text">硅</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GaAs%E5%92%8CInP%E5%8D%95%E6%99%B6"><span class="toc-number">4.2.</span> <span class="toc-text">GaAs和InP单晶</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%8A%E5%AF%BC%E4%BD%93%E8%B6%85%E6%99%B6%E6%A0%BC%E3%80%81%E9%87%8F%E5%AD%90%E9%98%B1"><span class="toc-number">4.3.</span> <span class="toc-text">半导体超晶格、量子阱</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A1%85%E5%9F%BA%E5%BA%94%E5%8F%98%E5%BC%82%E8%B4%A8%E7%BB%93%E6%9E%84%E6%9D%90%E6%96%99"><span class="toc-number">4.4.</span> <span class="toc-text">硅基应变异质结构材料</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E7%BB%B4%E9%87%8F%E5%AD%90%E7%BA%BF%E3%80%81%E9%9B%B6%E7%BB%B4%E9%87%8F%E5%AD%90%E7%82%B9"><span class="toc-number">4.5.</span> <span class="toc-text">一维量子线、零维量子点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%BD%E5%B8%A6%E9%9A%99%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%9D%90%E6%96%99"><span class="toc-number">4.6.</span> <span class="toc-text">宽带隙半导体材料</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%9D%90%E6%96%99%E7%9A%84%E5%9C%B0%E4%BD%8D"><span class="toc-number">5.</span> <span class="toc-text">半导体材料的地位</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%9A%84%E5%8F%91%E5%B1%95"><span class="toc-number">6.</span> <span class="toc-text">半导体的发展</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E4%BB%A3%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%9D%90%E6%96%99"><span class="toc-number">6.1.</span> <span class="toc-text">第一代半导体材料</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E4%BB%A3%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%9D%90%E6%96%99"><span class="toc-number">6.2.</span> <span class="toc-text">第二代半导体材料</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E4%BB%A3%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%9D%90%E6%96%99"><span class="toc-number">6.3.</span> <span class="toc-text">第三代半导体材料</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E4%BB%A3%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%B9%E5%BE%81%E5%8F%8A%E5%BA%94%E7%94%A8"><span class="toc-number">6.4.</span> <span class="toc-text">第三代半导体特征及应用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%94%E9%AB%98%E7%89%B9%E6%80%A7"><span class="toc-number">6.4.1.</span> <span class="toc-text">五高特性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B0%AE%E5%8C%96%E9%95%93%E7%9A%84%E5%94%AF%E4%B8%80%E6%80%A7"><span class="toc-number">6.4.2.</span> <span class="toc-text">氮化镓的唯一性</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B0%8F%E7%BB%93"><span class="toc-number">7.</span> <span class="toc-text">小结</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By yuan</div><div id="workboard"><img class="workSituationImg boardsign" src="https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg" alt="给个摸鱼的机会" title="给个摸鱼的机会"/><div id="runtimeTextTip"></div></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo" title="博客框架为Hexo"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg" alt="博客框架为Hexo"/></a><a class="github-badge" target="_blank" href="https://anzhiy.cn/" style="margin-inline:5px" data-title="本站使用AnZhiYu主题" title="本站使用AnZhiYu主题"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pan.anzhiy.cn/d/anzhiyu/svg/Theme-AnZhiYu-2E67D3.svg" alt="本站使用AnZhiYu主题"/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title="本站项目由Github托管"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg" alt="本站项目由Github托管"/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg" alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"/></a></p></div></footer><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" src="/img/loading.webp"/><div class="loading-image-dot"></div><div id="loading-percentage">0%</div></div></div><script>const loadingPercentage = document.getElementById("loading-percentage");
+<h1 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h1><h2 id="域名服务商"><a href="#域名服务商" class="headerlink" title="域名服务商"></a>域名服务商</h2><ul>
+<li>通过A记录，值为ip地址，解析二级域名image（自定义）</li>
+</ul>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.muerg.cn/i/2023/05/01/644f6ac0677d0.jpg" style="zoom:80%;" />
+
+<h2 id="Web服务器"><a href="#Web服务器" class="headerlink" title="Web服务器"></a>Web服务器</h2><ul>
+<li>面板-网站-创建网站-反向代理-填写域名、代号、地址</li>
+<li>地址填<a target="_blank" rel="noopener" href="http://127.0.0.1:8089/">http://127.0.0.1:8089</a> 确认。（或者docker容器的ip:端口，或者公网ip:端口[公网ip:端口需要放通8089端口，不建议]）</li>
+</ul>
+<h2 id="https配置"><a href="#https配置" class="headerlink" title="https配置"></a>https配置</h2><ul>
+<li>见<a target="_blank" rel="noopener" href="https://muerg.cn/post/1panel/">1panel-开源面板</a></li>
+<li>手动导入证书或者阿里云自动</li>
+</ul>
+<h1 id="图床配置"><a href="#图床配置" class="headerlink" title="图床配置"></a>图床配置</h1><h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><ul>
+<li>访问配置好的网址，下一步</li>
+</ul>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.muerg.cn/i/2023/05/01/644f6acb7658b.jpg" style="zoom:80%;" />
+
+<ul>
+<li>填写之前准备好的，注意别输入错，我截的图的用户名是输入错的，改正后才安装成功的。<ul>
+<li>数据库名称&#x2F;路径——数据库名称</li>
+<li>数据库用户名——数据库用户名</li>
+<li>数据库密码——数据库密码</li>
+<li>数据路连接地址——服务名称</li>
+</ul>
+</li>
+</ul>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.muerg.cn/i/2023/05/01/644f6ad56b3b7.jpg" style="zoom:80%;" />
+
+<ul>
+<li>之后就可以去首页了</li>
+<li>如果仅自用，可在系统设置里关闭相关配置选项。</li>
+</ul>
+<h2 id="获取token"><a href="#获取token" class="headerlink" title="获取token"></a>获取token</h2><ul>
+<li>如果不使用Picgo，可以跳过此项，兰空图床已经可以使用了。</li>
+<li>可在<code>接口</code>里查看详细</li>
+</ul>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.muerg.cn/i/2023/05/01/644f6add79231.jpg" style="zoom:80%;" />
+
+<ul>
+<li><p>进入在线post工具网页<a target="_blank" rel="noopener" href="https://www.postman.com/">postman</a>，或者搜其他网页，这个网页慢</p>
+</li>
+<li><p>地址在图床接口处有说明，是<strong>https:&#x2F;&#x2F;二级域名&#x2F;api&#x2F;v1&#x2F;tokens</strong></p>
+</li>
+<li><p>body部分</p>
+<ul>
+<li>key填<strong>email</strong>，对应value为<strong>注册兰空图床的邮箱</strong></li>
+<li>key填<strong>password</strong>，对应value为<strong>密码</strong></li>
+</ul>
+</li>
+<li><p>headers部分</p>
+<ul>
+<li>key填<strong>Accept</strong>，对应value为<strong>application&#x2F;json</strong></li>
+</ul>
+</li>
+<li><p>发送后会返回数据，其中会有token，请妥善保存。</p>
+</li>
+</ul>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.muerg.cn/i/2023/05/01/644f6ae4b0dca.jpg" style="zoom:80%;" />
+
+<h2 id="安装Picgo"><a href="#安装Picgo" class="headerlink" title="安装Picgo"></a>安装Picgo</h2><ul>
+<li><p>仓库地址：<a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo">Molunerfinn&#x2F;PicGo: A simple &amp; beautiful tool for pictures uploading built by vue-cli-electron-builder (github.com)</a></p>
+</li>
+<li><p>下载地址：<a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo/releases/tag/v2.3.1">Release 2.3.1 · Molunerfinn&#x2F;PicGo (github.com)</a></p>
+</li>
+<li><p>网盘地址：待定</p>
+</li>
+<li><p>下载完自行安装</p>
+</li>
+</ul>
+<h2 id="配置token"><a href="#配置token" class="headerlink" title="配置token"></a>配置token</h2><ul>
+<li>打开Picgo</li>
+<li>插件设置搜索lankong，安装插件</li>
+</ul>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.muerg.cn/i/2023/05/01/644f6af828537.jpg" style="zoom:80%;" />
+
+<ul>
+<li><p><code>Lsky Pro Version</code> 在下拉菜单中选择 Lsky Pro 版本，<code>V1</code> 还是 <code>V2</code>，默认 <code>V1</code></p>
+</li>
+<li><p>填写图床的<code>server url</code> ，注意不要以<code>/</code>结束</p>
+<ul>
+<li><code>https://image.example.com</code> ✅️</li>
+<li><code>https://image.example.com/</code> ❌️</li>
+</ul>
+</li>
+<li><p>填写 <code>Auth Token</code> 使用 <code>Bearer </code> 拼接</p>
+</li>
+<li><p><code>Strategy ID</code>，存储策略 ID，如果是 V1 或 V2 使用默认存储策略的用户，请留空；除非你知道具体 ID，否则请留空</p>
+</li>
+<li><p><code>Album ID</code>，相册 ID，只针对 V2 有效</p>
+</li>
+<li><p><code>Permission</code>，图片权限，公开还是私有，默认是私有</p>
+</li>
+<li><p><code>Sync Delete</code> 同步删除选项，只支持 <code>V2</code>，开启后在 PicGo 相册中删除图片可同步删除图床上的文件，默认关闭</p>
+</li>
+<li><p><code>Ignore certificate error</code> 开关，默认关闭，请保持关闭，除非你遇到 <code>certificate has expired</code> 等证书报错才需要考虑将其开启。由于有些站点使用 Let’s Encrypt 颁发的免费证书，有效期只有 90 天，在测试上传中遇到了 <code>certificate has expired</code> 错误，打开开关 <code>Ignore certificate error</code> 即可成功上传</p>
+</li>
+</ul>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.muerg.cn/i/2023/05/01/644f6b0001f90.jpg" style="zoom:80%;" />
+
+<p><strong>之后在上传区试试上传，通过</strong></p>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<li>PicGo项目地址：<a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo">Molunerfinn&#x2F;PicGo: A simple &amp; beautiful tool for pictures uploading built by vue-cli-electron-builder (github.com)</a></li>
+</ul>
+</article><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="/img/wechat.png" target="_blank"><img class="post-qr-code-img" src="/img/wechat.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.png" target="_blank"><img class="post-qr-code-img" src="/img/alipay.png" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul><a class="reward-main-btn" href="/about/" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="https://www.backunderstar.com/post/lsky-pro/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=『lsky-pro』开源图床&amp;url=https://www.backunderstar.com/post/lsky-pro/&amp;pic=https://image.muerg.cn/i/2023/05/01/644f693e0df9e.jpg" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="rm.copyPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/%E5%BC%80%E6%BA%90/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>开源<span class="tagsPageCount">2</span></a><a class="post-meta__box__tags" href="/tags/docker/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>docker<span class="tagsPageCount">2</span></a><a class="post-meta__box__tags" href="/tags/lsky-pro/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>lsky-pro<span class="tagsPageCount">1</span></a></div></div></div></div></div><div class="post-copyright"><i class="anzhiyufont anzhiyu-icon-copyright"></i><div class="post-copyright__author"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="https://www.backunderstar.com/post/lsky-pro/">原创</a><a class="post-copyright-title"><span>『lsky-pro』开源图床</span></a></div><div class="post-copyright-info-box"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"></span><a class="link" href="https://www.backunderstar.com">yuan</a></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a class="link" href="https://www.backunderstar.com/post/lsky-pro/">https://www.backunderstar.com/post/lsky-pro/</a></span><span class="copy-button" onclick="rm.copyPageUrl()"><i class="anzhiyufont anzhiyu-icon-copy"></i></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://www.backunderstar.com" target="_blank">yuan</a>！</span></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/post/1panel/"><img class="prev-cover" src="https://image.muerg.cn/i/2023/05/01/644f6510af1d3.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">『1panel』开源面板</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="anzhiyufont anzhiyu-icon-thumbs-up fa-fw" style="font-size: 1.5rem; margin-right: 4px"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/post/1panel/" title="『1panel』开源面板"><img class="cover" src="https://image.muerg.cn/i/2023/05/01/644f6510af1d3.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-05-01</div><div class="title">『1panel』开源面板</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="anzhiyufont anzhiyu-icon-comments"></i><span> 评论</span></div><div class="comment-randomInfo" style="display: none"><a onclick="anzhiyu.addRandomCommentInfo()" href="javascript:void(0)">匿名评论</a></div><div class="comment-tips" id="comment-tips"><span>你无需删除空行，直接评论以获取最佳展示效果</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div><div class="comment-barrage"></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8B%E5%85%88%E5%87%86%E5%A4%87"><span class="toc-number">1.</span> <span class="toc-text">事先准备</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%80%E5%A7%8B%E9%83%A8%E7%BD%B2"><span class="toc-number">2.</span> <span class="toc-text">开始部署</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85MySQL"><span class="toc-number">2.1.</span> <span class="toc-text">安装MySQL</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E7%BC%96%E6%8E%92%E6%A8%A1%E6%9D%BF"><span class="toc-number">2.2.</span> <span class="toc-text">创建编排模板</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F"><span class="toc-number">2.3.</span> <span class="toc-text">拉取镜像</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%96%E6%8E%92"><span class="toc-number">2.4.</span> <span class="toc-text">编排</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A1%AE%E8%AE%A4%E6%88%90%E5%8A%9F"><span class="toc-number">2.5.</span> <span class="toc-text">确认成功</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90"><span class="toc-number">3.</span> <span class="toc-text">域名解析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%9F%E5%90%8D%E6%9C%8D%E5%8A%A1%E5%95%86"><span class="toc-number">3.1.</span> <span class="toc-text">域名服务商</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Web%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-number">3.2.</span> <span class="toc-text">Web服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#https%E9%85%8D%E7%BD%AE"><span class="toc-number">3.3.</span> <span class="toc-text">https配置</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE"><span class="toc-number">4.</span> <span class="toc-text">图床配置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-number">4.1.</span> <span class="toc-text">初始化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96token"><span class="toc-number">4.2.</span> <span class="toc-text">获取token</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Picgo"><span class="toc-number">4.3.</span> <span class="toc-text">安装Picgo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEtoken"><span class="toc-number">4.4.</span> <span class="toc-text">配置token</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-number">5.</span> <span class="toc-text">参考资料</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By yuan</div><div id="workboard"><img class="workSituationImg boardsign" src="https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg" alt="给个摸鱼的机会" title="给个摸鱼的机会"/><div id="runtimeTextTip"></div></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo" title="博客框架为Hexo"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg" alt="博客框架为Hexo"/></a><a class="github-badge" target="_blank" href="https://anzhiy.cn/" style="margin-inline:5px" data-title="本站使用AnZhiYu主题" title="本站使用AnZhiYu主题"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pan.anzhiy.cn/d/anzhiyu/svg/Theme-AnZhiYu-2E67D3.svg" alt="本站使用AnZhiYu主题"/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title="本站项目由Github托管"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg" alt="本站项目由Github托管"/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg" alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"/></a></p></div></footer><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" src="/img/loading.webp"/><div class="loading-image-dot"></div><div id="loading-percentage">0%</div></div></div><script>const loadingPercentage = document.getElementById("loading-percentage");
 let loadingPercentageTimer = setInterval(function() {
   var progressBar = document.querySelector(".pace-progress");
   if (!progressBar) return
