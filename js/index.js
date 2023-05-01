@@ -16460,7 +16460,7 @@ n);
     }
     ;
     let ez;
-    ez = "https://fricle.backunderstar.com/";
+    ez = "https://circle.muerg.cn/";
     const tz = new class ANRequest {
         constructor(e) {
             var t, n, a, i, o;
@@ -16542,7 +16542,7 @@ n);
         }
     }
     ({
-        baseURL: "https://fricle.backunderstar.com/",
+        baseURL: "https://circle.muerg.cn/",
         timeout: 1e4,
         interceptors: {
             requestInterceptor: e=>{
