@@ -1,12 +1,7 @@
-https://muerg.cn/post/electric_system_2/
-https://muerg.cn/post/solid_physics_2/
-https://muerg.cn/post/solid_physics_1/
 https://muerg.cn/post/common_use/
 https://muerg.cn/post/zhishi/
 https://muerg.cn/post/lsky-pro/
 https://muerg.cn/post/1panel/
-https://muerg.cn/post/electric_system_0/
-https://muerg.cn/post/semiconductor_physics_0/
 https://muerg.cn/post/ubuntu_root/
 https://muerg.cn/post/yunzai_docker/
 https://muerg.cn/post/genshin_sayings/
